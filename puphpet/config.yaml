@@ -50,9 +50,14 @@ vagrantfile-local:
             start: 10200
             stop: 10500
     ssh:
+        host: null
+        port: null
+        private_key_path: null
         username: vagrant
-        password: vagrant
+        guest_port: null
         keep_alive: true
+        forward_agent: false
+        forward_x11: false
         shell: 'bash -l'
     vagrant:
         host: detect
